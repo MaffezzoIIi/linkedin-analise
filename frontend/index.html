@@ -72,6 +72,18 @@
     </header>
 
     <main>
+        <section style="background:#e9ecf3; border-radius:8px; padding:1.5rem; margin-bottom:2rem;">
+            <h2>Submeta seu Perfil</h2>
+            <form id="form-candidato" enctype="multipart/form-data" method="post" action="#">
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" id="nome" name="nome" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"><br>
+                <label for="arquivo">Exportação do LinkedIn (PDF):</label><br>
+                <input type="file" id="arquivo" name="arquivo" accept="application/pdf" required style="margin-bottom:1rem;"><br>
+                <button type="submit" style="padding:0.7rem 1.5rem;background:#2d3e50;color:#fff;border:none;border-radius:5px;cursor:pointer;">Enviar Perfil</button>
+            </form>
+            <div id="upload-status" style="margin-top:1rem;color:#2d3e50;"></div>
+        </section>
+
         <section>
             <h2>Grau de Escolaridade</h2>
             <p>Graduação completa em Ciência da Computação, Engenharia de Software ou áreas correlatas.</p>
@@ -118,5 +130,6 @@
     <footer>
         <p>© 2025 - Sistema de Análise de Perfis LinkedIn</p>
     </footer>
+    <script src="upload.js"></script>
 </body>
 </html>
